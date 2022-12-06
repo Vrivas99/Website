@@ -411,5 +411,14 @@ input {
 
     header li a {
         font-size: small;
+        padding: 5px;
+    }
+
+    header li a:hover {
+        color: rgb(253, 253, 253);
+        text-decoration: none;
+        background-color: #252525;
+        border-radius: 10px;
+        padding: 5px;
     }
 }
