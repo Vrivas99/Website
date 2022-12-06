@@ -29,25 +29,20 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <section>
-            <!-- content here -->
-            <div class="curve"></div>
-        </section>
+    <main class="wrapper">
         <div id="1" class="contenedor_info">
             <div class="text">
                 <h2>Quienes Somos...</h2>
                 <p>Somos una desarrolladora enfocada en facilitar el día a día de cada alumno y docentes de DuocUC,
                     desarrollando soluciones digitales como “Registrapp”.</p>
             </div>
-            <div>
-                <img width="700px" class="animated" src="./img/questions-animate.svg" alt="">
+            <div class="img">
+                <img class="animated" src="./img/questions-animate.svg" alt="">
             </div>
         </div>
-
         <div id="2" class="contenedor_info">
-            <div>
-                <img width="700px" class="animated" src="./img/cellphone-animate.svg" alt="">
+            <div class="img">
+                <img class="animated" src="./img/cellphone-animate.svg" alt="">
             </div>
             <div class="text">
                 <h2>Que es Registrapp</h2>
@@ -56,16 +51,6 @@
             </div>
         </div>
         <div class="carrusel">
-            <input type="radio" id="rad1" name="position" />
-            <label for="rad1"></label>
-            <input type="radio" id="rad2" name="position" />
-            <label for="rad2"></label>
-            <input type="radio" id="rad3" name="position" checked />
-            <label for="rad3"></label>
-            <input type="radio" id="rad4" name="position" />
-            <label for="rad4"></label>
-            <input type="radio" id="rad5" name="position" />
-            <label for="rad5"></label>
             <main id="carousel">
                 <div class="item"></div>
                 <div class="item"></div>
@@ -73,56 +58,55 @@
                 <div class="item"></div>
                 <div class="item"></div>
             </main>
-
         </div>
-
         <div id="4" class="download">
-
-            <div>
+            <div class="img">
                 <img width="700px" src="./img/download-animate.svg" alt="">
             </div>
             <div class="qr-container">
                 <h2>Escanea para Descargar</h2>
-                <img
-                    src="data:image/png;base64,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">
+                <img src="data:image/png;base64,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">
+            </div>
+            <div class="btn_download">
+                <a class="button-40" role="button" href="https://github.com/Vrivas99/APK_Registrapp/raw/main/app-release.apk">Descargar</a>
             </div>
         </div>
+        <footer class="footer">
+            <div class="waves">
+                <div class="wave" id="wave1"></div>
+                <div class="wave" id="wave2"></div>
+                <div class="wave" id="wave3"></div>
+                <div class="wave" id="wave4"></div>
+            </div>
+            <ul class="social-icon">
+                <li class="social-icon__item"><a class="social-icon__link" href="#">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                    </a></li>
+                <li class="social-icon__item"><a class="social-icon__link" href="#">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                    </a></li>
+                <li class="social-icon__item"><a class="social-icon__link" href="#">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                    </a></li>
+                <li class="social-icon__item"><a class="social-icon__link" href="https://github.com/jocasas/fbase_ionic">
+                        <ion-icon name="logo-github"></ion-icon>
+                    </a></li>
+            </ul>
+            <ul class="menu">
+                <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">About</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">Services</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">Team</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
+    
+            </ul>
+            <p>&copy;2022 Registrapp | All Rights Reserved</p>
+        </footer>
 
     </main>
-    <footer class="footer">
-        <div class="waves">
-            <div class="wave" id="wave1"></div>
-            <div class="wave" id="wave2"></div>
-            <div class="wave" id="wave3"></div>
-            <div class="wave" id="wave4"></div>
-        </div>
-        <ul class="social-icon">
-            <li class="social-icon__item"><a class="social-icon__link" href="#">
-                    <ion-icon name="logo-facebook"></ion-icon>
-                </a></li>
-            <li class="social-icon__item"><a class="social-icon__link" href="#">
-                    <ion-icon name="logo-twitter"></ion-icon>
-                </a></li>
-            <li class="social-icon__item"><a class="social-icon__link" href="#">
-                    <ion-icon name="logo-linkedin"></ion-icon>
-                </a></li>
-            <li class="social-icon__item"><a class="social-icon__link" href="https://github.com/jocasas/fbase_ionic">
-                    <ion-icon name="logo-github"></ion-icon>
-                </a></li>
-        </ul>
-        <ul class="menu">
-            <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
-            <li class="menu__item"><a class="menu__link" href="#">About</a></li>
-            <li class="menu__item"><a class="menu__link" href="#">Services</a></li>
-            <li class="menu__item"><a class="menu__link" href="#">Team</a></li>
-            <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
-
-        </ul>
-        <p>&copy;2022 Registrapp | All Rights Reserved</p>
-    </footer>
+    
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
+    <script src="/js/index.js"></script>
 </body>
-
 </html>
